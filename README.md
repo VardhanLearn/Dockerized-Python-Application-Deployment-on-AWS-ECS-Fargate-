@@ -15,18 +15,19 @@ The setup follows **production-ready DevOps best practices** without managing EC
 • Highly available & scalable architecture
 
 🏗 **Architecture**
+
 <img width="617" height="431" alt="Screenshot from 2026-01-07 16-20-57" src="https://github.com/user-attachments/assets/5056b4a5-a676-4310-a01b-60f779f1c8d9" />
 
-🛠 Technologies Used
+🛠 **Technologies Used**
 
 • Docker • Python (Flask) • Gunicorn • AWS ECS (Fargate) • Amazon ECR
 • Application Load Balancer • Amazon CloudWatch • AWS CLI
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-📂 Project Structure
+📂 **Project Structure**
 
 <img width="609" height="196" alt="Screenshot from 2026-01-07 17-28-53" src="https://github.com/user-attachments/assets/607ad537-a6d8-4d3a-ab1f-d81dc70f8f35" />
 
-=================================================================================================================================================================================================================================
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 **Deployment Steps**
 1️⃣ **Configure AWS CLI**
@@ -99,6 +100,7 @@ The setup follows **production-ready DevOps best practices** without managing EC
    • Pay only for used resources
 
 👤 **Author**
+
 **Vardhan Kandregula DevOps Engineer** | AWS | Docker | Kubernetes | CI/CD
 
 📌 This project is part of my DevOps learning and portfolio.
