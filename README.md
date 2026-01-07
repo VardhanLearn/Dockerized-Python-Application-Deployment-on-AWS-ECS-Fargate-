@@ -31,29 +31,36 @@ The setup follows **production-ready DevOps best practices** without managing EC
 **Deployment Steps**
 
 1️⃣ **Configure AWS CLI**
+    
     • aws configure
 
 2️⃣ **Create ECR Repository**
+    
     • aws ecr create-repository --repository-name ecs-fargate-python-app
 
 3️⃣ **Authenticate Docker to ECR**
-• aws ecr get-login-password \
-  | docker login \
-  --username AWS \
-  --password-stdin <account-id>.dkr.ecr.<region>.amazonaws.com
+   
+   • aws ecr get-login-password \
+   | docker login \
+   --username AWS \
+   --password-stdin <account-id>.dkr.ecr.<region>.amazonaws.com
 
 4️⃣ **Build Docker Image**
+   
    • docker build -t ecs-fargate-python-app .
 
 5️⃣ **Tag & Push Image**
+  
    • docker tag ecs-fargate-python-app:latest <ECR_URI>:latest
    • docker push <ECR_URI>:latest
 
 6️⃣ **Create ECS Cluster**
+  
    • Launch Type: Fargate
    • Cluster Name: ecs-fargate-cluster
 
 7️⃣ **Create Task Definition**
+   
    • Launch type: Fargate
    • CPU: 0.5 vCPU
    • Memory: 1 GB
