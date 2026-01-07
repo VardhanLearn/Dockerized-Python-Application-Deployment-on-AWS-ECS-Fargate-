@@ -14,7 +14,6 @@ The setup follows **production-ready DevOps best practices** without managing EC
 • Centralized logging with CloudWatch
 • Highly available & scalable architecture
 
-🏗 **Architecture**
 
 <img width="617" height="431" alt="Screenshot from 2026-01-07 16-20-57" src="https://github.com/user-attachments/assets/5056b4a5-a676-4310-a01b-60f779f1c8d9" />
 
